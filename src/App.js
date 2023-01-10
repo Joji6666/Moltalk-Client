@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 import Chat from "./chat";
 import "./chat.css";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect(
+  "http://moltalkserver-env.eba-mm8qpqt5.ap-northeast-2.elasticbeanstalk.com/"
+);
 
 function App() {
   const [username, setUsername] = useState("");
